@@ -1,0 +1,73 @@
+.App {
+  max-width: 1280px;
+  margin: 0 auto;
+  box-shadow: rgba(208, 177, 177, 0.35) 0px 5px 15px;
+  min-height: 100vh;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  margin: 3rem;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+}
+
+input {
+  width: 100%;
+  padding: 0.45rem;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  place-items: center;
+}
+
+.column {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+}
+
+.column > *:nth-of-type(n + 1) {
+  background-color: bisque;
+  color: rgb(138, 76, 0);
+}
+
+.column > *:nth-of-type(4n + 2) {
+  background-color: #93c9ad;
+  color: #047038;
+}
+
+.column > *:nth-of-type(3n + 3) {
+  background-color: #e9ba7d;
+  color: #9d5a03;
+}
+
+.column > *:nth-of-type(2n + 5) {
+  background-color: #97bc5f;
+  color: #457103;
+}
+
+@media only screen and (max-width: 860px) {
+  .column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
